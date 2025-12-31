@@ -1,0 +1,41 @@
+{
+  "Name": "Clock",
+  "Version": "0.1.0.0",
+  "Author": "PluckyDev",
+  "Actions": [
+    {
+      "Name": "Clock",
+      "UUID": "lol.plucky.clock",
+      "Icon": "imgs/icon",
+      "Tooltip": "Displays the current time.",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ],
+  "Category": "Clock",
+  "CategoryIcon": "imgs/category-icon",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "UUID": "lol.plucky.clock"
+}
