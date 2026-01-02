@@ -22,7 +22,10 @@ export class Clock extends SingletonAction {
   private scheduleNextUpdate(ev: WillAppearEvent): void {
     this.timeoutId && clearTimeout(this.timeoutId);
 
-    ev.action.setTitle(new Date().toLocaleTimeString([], { hour12: false }));
+    ev.action.setTitle([
+      new Date().toLocaleTimeString([], { hour12: false }),
+      new Intl.DateTimeFormat("sv-SE").format(new Date()),
+    ].join("\n"));
 
     const now = Date.now();
     const delayToNextSecond = 1000 - (now % 1000);
